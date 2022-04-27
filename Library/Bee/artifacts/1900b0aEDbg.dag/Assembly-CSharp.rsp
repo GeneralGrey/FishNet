@@ -117,8 +117,8 @@
 -define:FISHNET
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"C:/GitHub/Fish_UI_Testing/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
--r:"C:/GitHub/Fish_UI_Testing/Library/PackageCache/com.unity.visualscripting@1.7.6/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"C:/GitHub/FishNet/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
+-r:"C:/GitHub/FishNet/Library/PackageCache/com.unity.visualscripting@1.7.6/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll"
@@ -352,9 +352,9 @@
 "Assets/FishNet/Plugins/Addressables/AddressablesExtensions.cs"
 "Assets/FishNet/Upgrading/MirrorUpgrade.cs"
 "Assets/FishNet/Upgrading/UpgradeFromMirrorMenu.cs"
-"Assets/Scenes/PlayerInitialize.cs"
-"Assets/Scenes/PlayerSceneManager.cs"
-"Assets/Scenes/Portal.cs"
+"Assets/Scripts/PlayerInitialize.cs"
+"Assets/Scripts/PlayerSceneManager.cs"
+"Assets/Scripts/Portal.cs"
 -langversion:9.0
 
 /deterministic

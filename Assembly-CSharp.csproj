@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{469A2CB3-EED5-D441-BC09-921E3A0E0E68}</ProjectGuid>
+    <ProjectGuid>{5ED35FB8-7A21-7C15-DB72-386947C92520}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,12 +56,12 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\FishNet\Upgrading\UpgradeFromMirrorMenu.cs" />
-    <Compile Include="Assets\FishNet\Plugins\Addressables\AddressablesExtensions.cs" />
     <Compile Include="Assets\FishNet\Upgrading\MirrorUpgrade.cs" />
-    <Compile Include="Assets\Scenes\Portal.cs" />
-    <Compile Include="Assets\Scenes\PlayerInitialize.cs" />
-    <Compile Include="Assets\Scenes\PlayerSceneManager.cs" />
+    <Compile Include="Assets\Scripts\PlayerInitialize.cs" />
+    <Compile Include="Assets\FishNet\Plugins\Addressables\AddressablesExtensions.cs" />
+    <Compile Include="Assets\Scripts\Portal.cs" />
+    <Compile Include="Assets\Scripts\PlayerSceneManager.cs" />
+    <Compile Include="Assets\FishNet\Upgrading\UpgradeFromMirrorMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -711,14 +711,8 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Shared.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
@@ -726,8 +720,8 @@
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
@@ -759,14 +753,8 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
@@ -774,23 +762,35 @@
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualScripting.Shared.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="FishNet.Example.csproj">
-      <Project>{54B39138-3741-AAC0-E902-1A68F2A8775D}</Project>
-      <Name>FishNet.Example</Name>
-    </ProjectReference>
-    <ProjectReference Include="FishNet.Generated.csproj">
-      <Project>{F317C3F5-DA24-E152-F9BB-70957A6DC8C2}</Project>
-      <Name>FishNet.Generated</Name>
-    </ProjectReference>
     <ProjectReference Include="FishNet.Codegen.Cecil.csproj">
-      <Project>{AA976997-159F-DDC5-00CB-5655EA660D55}</Project>
+      <Project>{D1887853-8ACF-F4A5-08F5-BE1B0604D38E}</Project>
       <Name>FishNet.Codegen.Cecil</Name>
     </ProjectReference>
+    <ProjectReference Include="FishNet.Example.csproj">
+      <Project>{FD83BAE0-85A6-4DD6-BE4C-CFCAF9D19E43}</Project>
+      <Name>FishNet.Example</Name>
+    </ProjectReference>
     <ProjectReference Include="FishNet.Runtime.csproj">
-      <Project>{1EED477D-483A-9D54-8078-43D7B628C3A2}</Project>
+      <Project>{69D0C159-BAB4-689B-687E-9E213DFB5A44}</Project>
       <Name>FishNet.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="FishNet.Generated.csproj">
+      <Project>{6993D0B2-F610-6850-4E27-E6BC683FE302}</Project>
+      <Name>FishNet.Generated</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

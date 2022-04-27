@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{54B39138-3741-AAC0-E902-1A68F2A8775D}</ProjectGuid>
+    <ProjectGuid>{FD83BAE0-85A6-4DD6-BE4C-CFCAF9D19E43}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>FishNet.Example</AssemblyName>
@@ -58,18 +58,18 @@
   <ItemGroup>
     <Compile Include="Assets\FishNet\Example\All\Prediction\Rigidbody\Scripts\RigidbodyPrediction.cs" />
     <Compile Include="Assets\FishNet\Example\All\SceneManager\Scripts\SceneUnloaderExample.cs" />
+    <Compile Include="Assets\FishNet\Example\All\Prediction\CharacterController\Scripts\CharacterControllerPrediction.cs" />
+    <Compile Include="Assets\FishNet\Example\All\Prediction\Transform\Scripts\TransformPrediction.cs" />
     <Compile Include="Assets\FishNet\Example\All\CustomSyncType\Component State Sync\ComponentSyncStateBehaviour.cs" />
-    <Compile Include="Assets\FishNet\Example\All\CustomSyncType\Component State Sync\ComponentStateSync.cs" />
     <Compile Include="Assets\FishNet\Example\All\Authenticator\Scripts\Broadcasts.cs" />
-    <Compile Include="Assets\FishNet\Example\All\CustomSyncType\Custom Struct Sync\StructySync.cs" />
+    <Compile Include="Assets\FishNet\Example\All\SceneManager\Scripts\SceneLoaderExample.cs" />
+    <Compile Include="Assets\FishNet\Example\All\CustomSyncType\Component State Sync\ComponentStateSync.cs" />
     <Compile Include="Assets\FishNet\Example\All\CustomSyncType\Custom Struct Sync\StructSyncBehaviour.cs" />
     <Compile Include="Assets\FishNet\Example\All\SceneManager\Scripts\PlayerController.cs" />
     <Compile Include="Assets\FishNet\Example\All\CustomSyncType\Component State Sync\AMonoScript.cs" />
-    <Compile Include="Assets\FishNet\Example\All\Prediction\CharacterController\Scripts\CharacterControllerPrediction.cs" />
-    <Compile Include="Assets\FishNet\Example\All\SceneManager\Scripts\SceneLoaderExample.cs" />
-    <Compile Include="Assets\FishNet\Example\Scripts\NetworkHudCanvases.cs" />
-    <Compile Include="Assets\FishNet\Example\All\Prediction\Transform\Scripts\TransformPrediction.cs" />
     <Compile Include="Assets\FishNet\Example\All\Authenticator\Scripts\PasswordAuthenticator.cs" />
+    <Compile Include="Assets\FishNet\Example\All\CustomSyncType\Custom Struct Sync\StructySync.cs" />
+    <Compile Include="Assets\FishNet\Example\Scripts\NetworkHudCanvases.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\FishNet\Example\FishNet.Example.asmdef" />
@@ -723,7 +723,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="FishNet.Runtime.csproj">
-      <Project>{1EED477D-483A-9D54-8078-43D7B628C3A2}</Project>
+      <Project>{69D0C159-BAB4-689B-687E-9E213DFB5A44}</Project>
       <Name>FishNet.Runtime</Name>
     </ProjectReference>
   </ItemGroup>

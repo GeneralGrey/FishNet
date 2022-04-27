@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F317C3F5-DA24-E152-F9BB-70957A6DC8C2}</ProjectGuid>
+    <ProjectGuid>{6993D0B2-F610-6850-4E27-E6BC683FE302}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>FishNet.Generated</AssemblyName>
@@ -56,21 +56,21 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\FishNet\Runtime\Generated\Component\NetworkTransform\Editor\NetworkTransformEditor.cs" />
-    <Compile Include="Assets\FishNet\Runtime\Generated\Component\Prediction\PredictedObject.cs" />
-    <Compile Include="Assets\FishNet\Runtime\Generated\Component\Utility\DefaultScene.cs" />
-    <Compile Include="Assets\FishNet\Runtime\Generated\Component\NetworkTransform\NetworkTransform.cs" />
     <Compile Include="Assets\FishNet\Runtime\Generated\Component\Utility\PingDisplay.cs" />
-    <Compile Include="Assets\FishNet\Runtime\Generated\Component\Prediction\DesyncSmoother.cs" />
-    <Compile Include="Assets\FishNet\Runtime\Generated\Component\Prediction\PredictedRigidbody2D.cs" />
-    <Compile Include="Assets\FishNet\Runtime\Generated\Component\Spawning\PlayerSpawner.cs" />
-    <Compile Include="Assets\FishNet\Runtime\Generated\Component\Prediction\PredictedRigidbodyBase.cs" />
     <Compile Include="Assets\FishNet\Runtime\Generated\ReaderAndWriters\ScenedReaderWriters.cs" />
+    <Compile Include="Assets\FishNet\Runtime\Generated\Component\NetworkTransform\Editor\NetworkTransformEditor.cs" />
+    <Compile Include="Assets\FishNet\Runtime\Generated\Component\Prediction\DesyncSmoother.cs" />
+    <Compile Include="Assets\FishNet\Runtime\Generated\Component\Prediction\PredictedRigidbodyBase.cs" />
     <Compile Include="Assets\FishNet\Runtime\Generated\ReaderAndWriters\ConnectionReaderWriters.cs" />
-    <Compile Include="Assets\FishNet\Runtime\Generated\Component\NetworkAnimator\NetworkAnimator.cs" />
+    <Compile Include="Assets\FishNet\Runtime\Generated\Component\Utility\DefaultScene.cs" />
     <Compile Include="Assets\FishNet\Runtime\Generated\Component\NetworkAnimator\Editor\NetworkAnimatorEditor.cs" />
-    <Compile Include="Assets\FishNet\Runtime\Generated\Component\Prediction\Editor\PredictedObjectEditor.cs" />
+    <Compile Include="Assets\FishNet\Runtime\Generated\Component\NetworkTransform\NetworkTransform.cs" />
+    <Compile Include="Assets\FishNet\Runtime\Generated\Component\Prediction\PredictedRigidbody2D.cs" />
+    <Compile Include="Assets\FishNet\Runtime\Generated\Component\NetworkAnimator\NetworkAnimator.cs" />
+    <Compile Include="Assets\FishNet\Runtime\Generated\Component\Spawning\PlayerSpawner.cs" />
     <Compile Include="Assets\FishNet\Runtime\Generated\Component\Prediction\PredictedRigidbody.cs" />
+    <Compile Include="Assets\FishNet\Runtime\Generated\Component\Prediction\PredictedObject.cs" />
+    <Compile Include="Assets\FishNet\Runtime\Generated\Component\Prediction\Editor\PredictedObjectEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\FishNet\Runtime\Generated\FishNet.Generated.asmdef" />
@@ -724,7 +724,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="FishNet.Runtime.csproj">
-      <Project>{1EED477D-483A-9D54-8078-43D7B628C3A2}</Project>
+      <Project>{69D0C159-BAB4-689B-687E-9E213DFB5A44}</Project>
       <Name>FishNet.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
